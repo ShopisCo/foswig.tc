@@ -6,7 +6,7 @@ import CategoryCard from '../components/home/CategoryCard';
 const HomePage: React.FC = () => {
   const featuredArticles = [
     {
-      title: 'Getting Started with Shoppland',
+      title: 'Getting Started with ShopisCo',
       description: 'A comprehensive guide for new users to start using the Shoppland e-commerce platform.',
       imageSrc: 'https://github.com/ShopisCo/libstdc/blob/main/public/gemini_shopisappstore.png?raw=true',
       path: '/getting-started'
