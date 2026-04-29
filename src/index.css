@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 15 23 42;
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
+    --accent: 226 232 240;
+    --accent-foreground: 15 23 42;
+    --primary: 37 99 235;
+    --primary-foreground: 255 255 255;
+    --secondary: 0 188 188;
+    --secondary-foreground: 255 255 255;
+    --border: 226 232 240;
+    --input: 241 245 249;
+  }
+
+  .dark {
+    --background: 10 15 30;
+    --foreground: 226 232 240;
+    --muted: 30 41 59;
+    --muted-foreground: 148 163 184;
+    --accent: 30 41 59;
+    --accent-foreground: 226 232 240;
+    --primary: 96 165 250;
+    --primary-foreground: 10 15 30;
+    --secondary: 0 188 188;
+    --secondary-foreground: 10 15 30;
+    --border: 30 41 59;
+    --input: 30 41 59;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 300ms ease, color 300ms ease;
+  }
+
+  /* Wiki-specific styles */
+  article h2 {
+    @apply text-2xl font-bold mt-8 mb-4 pb-2 border-b;
+  }
+
+  article h3 {
+    @apply text-xl font-semibold mt-6 mb-3;
+  }
+
+  article h4 {
+    @apply text-lg font-medium mt-4 mb-2;
+  }
+
+  article p {
+    @apply mb-4 leading-relaxed;
+  }
+
+  article a:not([class]) {
+    @apply text-primary hover:underline;
+  }
+
+  article blockquote {
+    @apply border-l-4 border-primary/30 pl-4 italic text-muted-foreground my-4;
+  }
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animated transitions */
+.page-transition-enter {
+  opacity: 0;
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.page-transition-exit {
+  opacity: 1;
+}
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
