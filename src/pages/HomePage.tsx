@@ -8,13 +8,13 @@ const HomePage: React.FC = () => {
     {
       title: 'Getting Started with ShopisCo',
       description: 'A comprehensive guide for new users to start using the ShopisCo e-commerce platform.',
-      imageSrc: 'https://github.com/ShopisCo/libstdc/blob/main/public/gemini_shopisappstore.png?raw=true',
+      imageSrc: 'https://github.com/ShopisCo/index-libs/blob/main/public/gemini_shopisappstore.png?raw=true',
       path: '/getting-started'
     },
     {
       title: 'Product Management Guide',
       description: 'Learn how to effectively manage your product catalog, including adding, editing, and organizing products.',
-      imageSrc: 'https://github.com/ShopisCo/libstdc/blob/main/public/productmanage.png?raw=true',
+      imageSrc: 'https://github.com/ShopisCo/index-libs/blob/main/public/productmanage.png?raw=true',
       path: '/products'
     },
     {
